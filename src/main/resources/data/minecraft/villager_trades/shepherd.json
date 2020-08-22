@@ -1,0 +1,965 @@
+{
+  "profession": "minecraft:shepherd",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:white_wool",
+      "price": 18,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:brown_wool",
+      "price": 18,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:black_wool",
+      "price": 18,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:gray_wool",
+      "price": 18,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:shears"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:white_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:gray_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:black_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:light_blue_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:lime_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_wool"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_carpet"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:yellow_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:light_gray_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:orange_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:red_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:pink_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_bed"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:brown_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:purple_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:blue_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:green_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:magenta_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:cyan_dye",
+      "price": 12,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:painting"
+      },
+      "price": 2,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

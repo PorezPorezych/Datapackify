@@ -1,0 +1,106 @@
+{
+  "profession": "minecraft:leatherworker",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:leather",
+      "price": 6,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_leggings",
+      "price": 3,
+      "max_uses": 12,
+      "experience": 1
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_chestplate",
+      "price": 7,
+      "max_uses": 12,
+      "experience": 1
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:flint",
+      "price": 26,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_helmet",
+      "price": 5,
+      "max_uses": 12,
+      "experience": 5
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_boots",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 5
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:rabbit_hide",
+      "price": 9,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_chestplate",
+      "price": 7,
+      "max_uses": 12,
+      "experience": 1
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:scute",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_horse_armor",
+      "price": 6,
+      "max_uses": 12,
+      "experience": 15
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:saddle"
+      },
+      "price": 6,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_helmet",
+      "price": 5,
+      "max_uses": 12,
+      "experience": 30
+    }
+  ]
+}

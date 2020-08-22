@@ -1,0 +1,102 @@
+{
+  "profession": "minecraft:weaponsmith",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:iron_axe"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:iron_sword"
+      },
+      "base_price": 2,
+      "max_uses": 3,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:iron_ingot",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:bell"
+      },
+      "price": 36,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.2
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:flint",
+      "price": 24,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:diamond",
+      "price": 1,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:diamond_axe"
+      },
+      "base_price": 12,
+      "max_uses": 3,
+      "experience": 15,
+      "multiplier": 0.2
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:diamond_sword"
+      },
+      "base_price": 8,
+      "max_uses": 3,
+      "experience": 30,
+      "multiplier": 0.2
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "profession": "minecraft:fisherman",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:string",
+      "price": 20,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 10,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:process_item",
+      "second_buy": {
+        "count": 1,
+        "item": "minecraft:cod"
+      },
+      "second_count": 6,
+      "price": 1,
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_cod"
+      },
+      "sell_count": 6,
+      "max_uses": 16,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cod_bucket"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 16,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:cod",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:process_item",
+      "second_buy": {
+        "count": 1,
+        "item": "minecraft:salmon"
+      },
+      "second_count": 6,
+      "price": 1,
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_salmon"
+      },
+      "sell_count": 6,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:campfire"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:salmon",
+      "price": 13,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:fishing_rod"
+      },
+      "base_price": 3,
+      "max_uses": 3,
+      "experience": 10,
+      "multiplier": 0.2
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:tropical_fish",
+      "price": 6,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:pufferfish",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:type_aware_buy_for_one_emerald",
+      "map": {
+        "minecraft:plains": "minecraft:oak_boat",
+        "minecraft:taiga": "minecraft:spruce_boat",
+        "minecraft:snow": "minecraft:spruce_boat",
+        "minecraft:desert": "minecraft:jungle_boat",
+        "minecraft:jungle": "minecraft:jungle_boat",
+        "minecraft:savanna": "minecraft:acacia_boat",
+        "minecraft:swamp": "minecraft:dark_oak_boat"
+      },
+      "count": 1,
+      "max_uses": 12,
+      "experience": 30
+    }
+  ]
+}

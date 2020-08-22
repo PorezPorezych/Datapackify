@@ -1,0 +1,113 @@
+{
+  "profession": "minecraft:butcher",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:chicken",
+      "price": 14,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:porkchop",
+      "price": 7,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:rabbit",
+      "price": 4,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:rabbit_stew"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_porkchop"
+      },
+      "price": 1,
+      "count": 5,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_chicken"
+      },
+      "price": 1,
+      "count": 8,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:mutton",
+      "price": 7,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:beef",
+      "price": 10,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:dried_kelp_block",
+      "price": 10,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:sweet_berries",
+      "price": 10,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "profession": "minecraft:farmer",
+  "1": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:wheat",
+      "price": 20,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:potato",
+      "price": 26,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:carrot",
+      "price": 22,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:beetroot",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:bread"
+      },
+      "price": 1,
+      "count": 6,
+      "max_uses": 16,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ],
+  "2": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:pumpkin",
+      "price": 6,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pumpkin_pie"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:apple"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ],
+  "3": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cookie"
+      },
+      "price": 3,
+      "count": 18,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:melon",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    }
+  ],
+  "4": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cake"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:night_vision",
+      "duration": 100,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:jump_boost",
+      "duration": 160,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:weakness",
+      "duration": 140,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:blindness",
+      "duration": 120,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:poison",
+      "duration": 280,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:saturation",
+      "duration": 7,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ],
+  "5": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:golden_carrot"
+      },
+      "price": 3,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:glistering_melon_slice"
+      },
+      "price": 4,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

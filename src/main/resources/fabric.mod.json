@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "datapackify",
+  "version": "${version}",
+
+  "name": "Datapackify",
+  "description": "Puts more game mechanics in the control of datapacks.",
+  "authors": [
+    "Nikolay Kochulin"
+  ],
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ml.porez.datapackify.Datapackify"
+    ]
+  },
+  "accessWidener": "datapackify.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}
