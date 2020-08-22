@@ -1,0 +1,62 @@
+{
+  "profession": "minecraft:armorer",
+  "career_level": 1,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:iron_leggings"
+      },
+      "price": 7,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:iron_boots"
+      },
+      "price": 4,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:iron_helmet"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:iron_chestplate"
+      },
+      "price": 9,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    }
+  ]
+}

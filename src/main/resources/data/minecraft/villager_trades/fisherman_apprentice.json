@@ -1,0 +1,43 @@
+{
+  "profession": "minecraft:fisherman",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:cod",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:process_item",
+      "second_buy": {
+        "count": 1,
+        "item": "minecraft:salmon"
+      },
+      "second_count": 6,
+      "price": 1,
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_salmon"
+      },
+      "sell_count": 6,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:campfire"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ]
+}

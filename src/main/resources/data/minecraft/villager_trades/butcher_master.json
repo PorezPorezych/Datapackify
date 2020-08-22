@@ -1,0 +1,14 @@
+{
+  "profession": "minecraft:butcher",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:sweet_berries",
+      "price": 10,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

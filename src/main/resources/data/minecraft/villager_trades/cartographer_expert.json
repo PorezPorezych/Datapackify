@@ -1,0 +1,210 @@
+{
+  "profession": "minecraft:cartographer",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:item_frame"
+      },
+      "price": 7,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_banner"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ]
+}

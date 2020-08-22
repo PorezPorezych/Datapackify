@@ -1,0 +1,30 @@
+{
+  "profession": "minecraft:farmer",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:golden_carrot"
+      },
+      "price": 3,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:glistering_melon_slice"
+      },
+      "price": 4,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

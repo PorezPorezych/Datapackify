@@ -1,0 +1,26 @@
+{
+  "profession": "minecraft:mason",
+  "career_level": 1,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:clay_ball",
+      "price": 10,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brick"
+      },
+      "price": 1,
+      "count": 10,
+      "max_uses": 16,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ]
+}

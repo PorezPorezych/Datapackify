@@ -1,0 +1,17 @@
+{
+  "profession": "minecraft:toolsmith",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:diamond_pickaxe"
+      },
+      "base_price": 13,
+      "max_uses": 3,
+      "experience": 30,
+      "multiplier": 0.2
+    }
+  ]
+}

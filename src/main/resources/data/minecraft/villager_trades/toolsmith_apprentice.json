@@ -1,0 +1,26 @@
+{
+  "profession": "minecraft:toolsmith",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:iron_ingot",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:bell"
+      },
+      "price": 36,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.2
+    }
+  ]
+}

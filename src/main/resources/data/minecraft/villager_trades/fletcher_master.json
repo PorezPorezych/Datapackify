@@ -1,0 +1,39 @@
+{
+  "profession": "minecraft:fletcher",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:tripwire_hook",
+      "price": 8,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:crossbow"
+      },
+      "base_price": 3,
+      "max_uses": 3,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_potion_holding_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:tipped_arrow"
+      },
+      "sell_count": 5,
+      "price": 2,
+      "max_uses": 12,
+      "experience": 30,
+      "second_buy": "minecraft:arrow",
+      "second_count": 5,
+      "price_multiplier": 0.05
+    }
+  ]
+}

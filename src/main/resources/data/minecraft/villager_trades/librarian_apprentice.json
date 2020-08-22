@@ -1,0 +1,30 @@
+{
+  "profession": "minecraft:librarian",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:book",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:enchant_book",
+      "experience": 5
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lantern"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ]
+}

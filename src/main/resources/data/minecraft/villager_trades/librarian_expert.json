@@ -1,0 +1,42 @@
+{
+  "profession": "minecraft:librarian",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:writable_book",
+      "price": 2,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:enchant_book",
+      "experience": 15
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:clock"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:compass"
+      },
+      "price": 4,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ]
+}

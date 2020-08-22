@@ -1,0 +1,22 @@
+{
+  "profession": "minecraft:cartographer",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:glass_pane",
+      "price": 11,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_map",
+      "price": 13,
+      "structure": "minecraft:monument",
+      "icon_type": "minecraft:monument",
+      "max_uses": 12,
+      "experience": 5
+    }
+  ]
+}

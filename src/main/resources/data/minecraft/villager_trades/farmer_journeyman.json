@@ -1,0 +1,26 @@
+{
+  "profession": "minecraft:farmer",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cookie"
+      },
+      "price": 3,
+      "count": 18,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:melon",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    }
+  ]
+}

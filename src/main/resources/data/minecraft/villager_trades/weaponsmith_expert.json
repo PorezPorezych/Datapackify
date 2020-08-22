@@ -1,0 +1,25 @@
+{
+  "profession": "minecraft:weaponsmith",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:diamond",
+      "price": 1,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:diamond_axe"
+      },
+      "base_price": 12,
+      "max_uses": 3,
+      "experience": 15,
+      "multiplier": 0.2
+    }
+  ]
+}

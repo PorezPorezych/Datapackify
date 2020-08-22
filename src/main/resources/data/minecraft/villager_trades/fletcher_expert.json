@@ -1,0 +1,25 @@
+{
+  "profession": "minecraft:fletcher",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:feather",
+      "price": 24,
+      "max_uses": 16,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:bow"
+      },
+      "base_price": 2,
+      "max_uses": 3,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ]
+}

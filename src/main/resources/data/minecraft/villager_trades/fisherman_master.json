@@ -1,0 +1,29 @@
+{
+  "profession": "minecraft:fisherman",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:pufferfish",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:type_aware_buy_for_one_emerald",
+      "map": {
+        "minecraft:plains": "minecraft:oak_boat",
+        "minecraft:taiga": "minecraft:spruce_boat",
+        "minecraft:snow": "minecraft:spruce_boat",
+        "minecraft:desert": "minecraft:jungle_boat",
+        "minecraft:jungle": "minecraft:jungle_boat",
+        "minecraft:savanna": "minecraft:acacia_boat",
+        "minecraft:swamp": "minecraft:dark_oak_boat"
+      },
+      "count": 1,
+      "max_uses": 12,
+      "experience": 30
+    }
+  ]
+}

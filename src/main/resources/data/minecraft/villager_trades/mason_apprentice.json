@@ -1,0 +1,26 @@
+{
+  "profession": "minecraft:mason",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:stone",
+      "price": 20,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:chiseled_stone_bricks"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ]
+}

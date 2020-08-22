@@ -1,0 +1,60 @@
+{
+  "profession": "minecraft:farmer",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cake"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:night_vision",
+      "duration": 100,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:jump_boost",
+      "duration": 160,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:weakness",
+      "duration": 140,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:blindness",
+      "duration": 120,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:poison",
+      "duration": 280,
+      "experience": 15,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_suspicious_stew",
+      "effect": "minecraft:saturation",
+      "duration": 7,
+      "experience": 15,
+      "multiplier": 0.05
+    }
+  ]
+}

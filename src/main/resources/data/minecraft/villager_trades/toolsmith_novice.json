@@ -1,0 +1,62 @@
+{
+  "profession": "minecraft:toolsmith",
+  "career_level": 1,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:stone_axe"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:stone_shovel"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:stone_pickaxe"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:stone_hoe"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.2
+    }
+  ]
+}

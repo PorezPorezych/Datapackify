@@ -1,0 +1,38 @@
+{
+  "profession": "minecraft:butcher",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:coal",
+      "price": 15,
+      "max_uses": 16,
+      "experience": 2,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_porkchop"
+      },
+      "price": 1,
+      "count": 5,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cooked_chicken"
+      },
+      "price": 1,
+      "count": 8,
+      "max_uses": 16,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ]
+}

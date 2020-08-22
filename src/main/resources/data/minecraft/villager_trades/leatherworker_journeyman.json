@@ -1,0 +1,21 @@
+{
+  "profession": "minecraft:leatherworker",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:rabbit_hide",
+      "price": 9,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_chestplate",
+      "price": 7,
+      "max_uses": 12,
+      "experience": 1
+    }
+  ]
+}

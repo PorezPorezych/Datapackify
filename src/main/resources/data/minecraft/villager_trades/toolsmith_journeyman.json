@@ -1,0 +1,59 @@
+{
+  "profession": "minecraft:toolsmith",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:flint",
+      "price": 30,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:iron_axe"
+      },
+      "base_price": 1,
+      "max_uses": 3,
+      "experience": 10,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:iron_shovel"
+      },
+      "base_price": 2,
+      "max_uses": 3,
+      "experience": 10,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_enchanted_tool",
+      "tool": {
+        "count": 1,
+        "item": "minecraft:iron_pickaxe"
+      },
+      "base_price": 3,
+      "max_uses": 3,
+      "experience": 10,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:diamond_hoe"
+      },
+      "price": 4,
+      "count": 1,
+      "max_uses": 3,
+      "experience": 10,
+      "multiplier": 0.2
+    }
+  ]
+}

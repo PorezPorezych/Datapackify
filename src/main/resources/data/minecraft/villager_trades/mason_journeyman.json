@@ -1,0 +1,66 @@
+{
+  "profession": "minecraft:mason",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:granite",
+      "price": 16,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:andesite",
+      "price": 16,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:diorite",
+      "price": 16,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:polished_andesite"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:polished_diorite"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:polished_granite"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 16,
+      "experience": 10,
+      "multiplier": 0.05
+    }
+  ]
+}

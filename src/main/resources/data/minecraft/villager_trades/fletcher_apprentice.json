@@ -1,0 +1,26 @@
+{
+  "profession": "minecraft:fletcher",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:flint",
+      "price": 26,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:bow"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 5,
+      "multiplier": 0.05
+    }
+  ]
+}

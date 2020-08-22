@@ -1,0 +1,18 @@
+{
+  "profession": "minecraft:librarian",
+  "career_level": 5,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:name_tag"
+      },
+      "price": 20,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    }
+  ]
+}

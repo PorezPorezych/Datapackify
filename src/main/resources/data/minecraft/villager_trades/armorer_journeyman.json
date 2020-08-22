@@ -1,0 +1,58 @@
+{
+  "profession": "minecraft:armorer",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:lava_bucket",
+      "price": 1,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:diamond",
+      "price": 1,
+      "max_uses": 12,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:chainmail_helmet"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:chainmail_chestplate"
+      },
+      "price": 4,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.2
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:shield"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 10,
+      "multiplier": 0.2
+    }
+  ]
+}

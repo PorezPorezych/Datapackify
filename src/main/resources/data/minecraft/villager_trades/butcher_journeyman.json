@@ -1,0 +1,22 @@
+{
+  "profession": "minecraft:butcher",
+  "career_level": 3,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:mutton",
+      "price": 7,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:beef",
+      "price": 10,
+      "max_uses": 16,
+      "experience": 20,
+      "multiplier": 0.05
+    }
+  ]
+}

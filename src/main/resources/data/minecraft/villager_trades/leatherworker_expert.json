@@ -1,0 +1,21 @@
+{
+  "profession": "minecraft:leatherworker",
+  "career_level": 4,
+  "trades": [
+    {
+      "type": "minecraft:buy_for_one_emerald",
+      "buy": "minecraft:scute",
+      "price": 4,
+      "max_uses": 12,
+      "experience": 30,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_dyed_armor",
+      "sell": "minecraft:leather_horse_armor",
+      "price": 6,
+      "max_uses": 12,
+      "experience": 15
+    }
+  ]
+}
