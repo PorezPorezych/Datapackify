@@ -14,7 +14,7 @@
       "type": "minecraft:sell_map",
       "price": 13,
       "structure": "minecraft:monument",
-      "icon_type": "minecraft:monument",
+      "icon_type": "monument",
       "max_uses": 12,
       "experience": 5
     }

@@ -28,7 +28,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
 public class VillagerTradeManager extends JsonDataLoader implements IdentifiableResourceReloadListener {
-    private static final Logger LOGGER = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger("Datapackify/VillagerTradeManager");
     private static final Gson GSON = (new GsonBuilder()).setPrettyPrinting().disableHtmlEscaping().create();
 
     public VillagerTradeManager() {
@@ -57,14 +57,11 @@ public class VillagerTradeManager extends JsonDataLoader implements Identifiable
                 if (!profession.isPresent()) {
                     throw new IllegalArgumentException("Invalid profession " + profId.toString());
                 }
-                Map<Integer, TradeOffers.Factory[]> map = parseFile(el.getValue());
-                for (Map.Entry<Integer, TradeOffers.Factory[]> e: map.entrySet()) {
-                    if (trades.get(profession.get()).containsKey(e.getKey())) {
-                        trades.get(profession.get()).get(e.getKey()).addAll(Arrays.asList(e.getValue()));
-                    }
-                    else
+                Map.Entry<Integer, TradeOffers.Factory[]> e = parseFile(el.getValue());
+                if (trades.get(profession.get()).containsKey(e.getKey()))
+                    trades.get(profession.get()).get(e.getKey()).addAll(Arrays.asList(e.getValue()));
+                else
                     trades.get(profession.get()).put(e.getKey(), new ArrayList<>(Arrays.asList(e.getValue())));
-                }
             } catch (IllegalArgumentException | JsonParseException e) {
                 LOGGER.error("Encountered error while parsing {}: {}", el.getKey(), e);
                 e.printStackTrace();
@@ -72,9 +69,9 @@ public class VillagerTradeManager extends JsonDataLoader implements Identifiable
         }
         LOGGER.info("Loaded {} villager trades.", trades.size());
         Map<VillagerProfession, Int2ObjectMap<TradeOffers.Factory[]>> finalMap = new HashMap<>();
-        for (Map.Entry<VillagerProfession, Map<Integer, List<TradeOffers.Factory>>> el: trades.entrySet()) {
+        for (Map.Entry<VillagerProfession, Map<Integer, List<TradeOffers.Factory>>> el : trades.entrySet()) {
             Int2ObjectMap<TradeOffers.Factory[]> profMap = new Int2ObjectOpenHashMap<>();
-            for (Map.Entry<Integer, List<TradeOffers.Factory>> profEl: el.getValue().entrySet()) {
+            for (Map.Entry<Integer, List<TradeOffers.Factory>> profEl : el.getValue().entrySet()) {
                 profMap.put(profEl.getKey().intValue(), profEl.getValue().toArray(new TradeOffers.Factory[0]));
             }
             finalMap.put(el.getKey(), profMap);
@@ -82,23 +79,32 @@ public class VillagerTradeManager extends JsonDataLoader implements Identifiable
         TradeOffers.PROFESSION_TO_LEVELED_TRADE = finalMap;
     }
 
-    private Map<Integer, TradeOffers.Factory[]> parseFile(JsonElement file) {
+    private Map.Entry<Integer, TradeOffers.Factory[]> parseFile(JsonElement file) {
         JsonObject obj = JsonHelper.asObject(file, "<file>");
-        Map<Integer, TradeOffers.Factory[]> map = new HashMap<>();
-        for (Map.Entry<String, JsonElement> entry : obj.entrySet()) {
-            if (entry.getKey().equals("profession"))
-                continue;
-            int id = Integer.parseInt(entry.getKey());
-            JsonArray trades = JsonHelper.asArray(entry.getValue(), entry.getKey());
-            TradeOffers.Factory[] array = new TradeOffers.Factory[trades.size()];
-            int i = 0;
-            for (JsonElement trade : trades) {
-                array[i++] = parseTrade(trade);
-            }
-            map.put(id,array);
+        int careerLevel = JsonHelper.getInt(obj, "career_level");
+        JsonArray trades = JsonHelper.getArray(obj, "trades");
+        TradeOffers.Factory[] procTrades = new TradeOffers.Factory[trades.size()];
+        int i = 0;
+        for (JsonElement trade : trades) {
+            procTrades[i++] = parseTrade(trade);
         }
 
-        return map;
+        return new Map.Entry<Integer, TradeOffers.Factory[]>() {
+            @Override
+            public Integer getKey() {
+                return careerLevel;
+            }
+
+            @Override
+            public TradeOffers.Factory[] getValue() {
+                return procTrades;
+            }
+
+            @Override
+            public TradeOffers.Factory[] setValue(TradeOffers.Factory[] factories) {
+                throw new UnsupportedOperationException();
+            }
+        };
     }
 
     private TradeOffers.Factory parseTrade(JsonElement trade) {

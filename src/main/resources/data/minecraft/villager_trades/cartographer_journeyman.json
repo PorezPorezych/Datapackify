@@ -14,7 +14,7 @@
       "type": "minecraft:sell_map",
       "price": 14,
       "structure": "minecraft:mansion",
-      "icon_type": "minecraft:mansion",
+      "icon_type": "mansion",
       "max_uses": 12,
       "experience": 10
     }
