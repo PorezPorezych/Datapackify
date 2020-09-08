@@ -178,7 +178,7 @@ object VillagerTrades {
         val map: MutableMap<VillagerType, Item> = HashMap()
         for ((key, value) in obj.entrySet()) {
             val res = Registry.VILLAGER_TYPE.getOrEmpty(Identifier(key))
-            kotlin.require(res.isPresent) { "Invalid villager type $key" }
+            require(res.isPresent) { "Invalid villager type $key" }
             map[res.get()] = getItem(JsonHelper.asString(value, "item"))
         }
         return map
@@ -186,19 +186,19 @@ object VillagerTrades {
 
     private fun getItem(name: String): Item {
         val res = Registry.ITEM.getOrEmpty(Identifier(name))
-        kotlin.require(res.isPresent) { "Invalid item $name" }
+        require(res.isPresent) { "Invalid item $name" }
         return res.get()
     }
 
     private fun getStatusEffect(name: String): StatusEffect? {
         val res = Registry.STATUS_EFFECT.getOrEmpty(Identifier(name))
-        kotlin.require(res.isPresent) { "Invalid status effect $name" }
+        require(res.isPresent) { "Invalid status effect $name" }
         return res.get()
     }
 
     private fun getStructureFeature(name: String): StructureFeature<*>? {
         val res = Registry.STRUCTURE_FEATURE.getOrEmpty(Identifier(name))
-        kotlin.require(res.isPresent) { "Invalid structure feature $name" }
+        require(res.isPresent) { "Invalid structure feature $name" }
         return res.get()
     }
 
