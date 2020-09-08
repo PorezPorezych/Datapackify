@@ -4,6 +4,7 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.google.gson.JsonSyntaxException
 import ml.porez.datapackify.Datapackify
+import ml.porez.datapackify.JsonUtils
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper
 import net.minecraft.entity.effect.StatusEffect
@@ -25,12 +26,10 @@ object VillagerTrades {
     private val VILLAGER_TRADES = VillagerTradeManager()
 
     fun init() {
-
-
         register(Datapackify.NAMESPACE + "empty") { _ -> Factory { _, _ -> null } }
         register("minecraft:buy_for_one_emerald") { obj ->
             BuyForOneEmeraldFactory(
-                    getItem(JsonHelper.getString(obj, "buy")),
+                    JsonHelper.getItem(obj, "buy"),
                     JsonHelper.getInt(obj, "price"),
                     JsonHelper.getInt(obj, "max_uses"),
                     JsonHelper.getInt(obj, "experience")
@@ -38,7 +37,7 @@ object VillagerTrades {
         }
         register("minecraft:sell_item") { obj ->
             SellItemFactory(
-                    getItemStack(get(obj, "sell")),
+                    JsonUtils.makeItemStack(JsonUtils.get(obj, "sell")),
                     JsonHelper.getInt(obj, "price"),
                     JsonHelper.getInt(obj, "count"),
                     JsonHelper.getInt(obj, "max_uses"),
@@ -55,13 +54,13 @@ object VillagerTrades {
                     JsonHelper.getInt(obj, "experience"),
                     JsonHelper.getFloat(obj, "multiplier", 0.05f)
             )
-            fac.tool = getItemStack(get(obj, "tool"))
+            fac.tool = JsonUtils.makeItemStack(JsonUtils.get(obj, "tool"))
             fac
         }
         register("minecraft:sell_map") { obj ->
             SellMapFactory(
                     JsonHelper.getInt(obj, "price"),
-                    getStructureFeature(JsonHelper.getString(obj, "structure")),
+                    JsonUtils.getRegistryItem(Registry.STRUCTURE_FEATURE, JsonHelper.getString(obj, "structure")),
                     getMapIconType(JsonHelper.getString(obj, "icon_type")),
                     JsonHelper.getInt(obj, "max_uses"),
                     JsonHelper.getInt(obj, "experience")
@@ -69,7 +68,7 @@ object VillagerTrades {
         }
         register("minecraft:sell_suspicious_stew") { obj ->
             val fac = SellSuspiciousStewFactory(
-                    getStatusEffect(JsonHelper.getString(obj, "effect")),
+                    JsonUtils.getRegistryItem(Registry.STATUS_EFFECT, JsonHelper.getString(obj, "effect")),
                     JsonHelper.getInt(obj, "duration"),
                     JsonHelper.getInt(obj, "experience")
             )
@@ -87,8 +86,8 @@ object VillagerTrades {
                     JsonHelper.getInt(obj, "experience")
             )
             fac.multiplier = JsonHelper.getFloat(obj, "multiplier", 0.05f)
-            fac.secondBuy = getItemStack(get(obj, "second_buy"))
-            fac.sell = getItemStack(get(obj, "sell"))
+            fac.secondBuy = JsonUtils.makeItemStack(JsonUtils.get(obj, "second_buy"))
+            fac.sell = JsonUtils.makeItemStack(JsonUtils.get(obj, "sell"))
             fac
         }
         register("minecraft:type_aware_buy_for_one_emerald") { obj ->
@@ -101,7 +100,7 @@ object VillagerTrades {
         }
         register("minecraft:sell_potion_holding_item") { obj ->
             val fac = SellPotionHoldingItemFactory(
-                    getItem(JsonHelper.getString(obj, "second_buy")),
+                    JsonHelper.getItem(obj, "second_buy"),
                     JsonHelper.getInt(obj, "second_count"),
                     Items.STONE,
                     JsonHelper.getInt(obj, "sell_count"),
@@ -109,12 +108,12 @@ object VillagerTrades {
                     JsonHelper.getInt(obj, "max_uses"),
                     JsonHelper.getInt(obj, "experience")
             )
-            fac.sell = getItemStack(get(obj, "sell"))
+            fac.sell = JsonUtils.makeItemStack(JsonUtils.get(obj, "sell"))
             fac
         }
         register("minecraft:sell_dyed_armor") { obj ->
             SellDyedArmorFactory(
-                    getItem(JsonHelper.getString(obj, "sell")),
+                    JsonHelper.getItem(obj, "sell"),
                     JsonHelper.getInt(obj, "price"),
                     JsonHelper.getInt(obj, "max_uses"),
                     JsonHelper.getInt(obj, "experience")
@@ -166,49 +165,12 @@ object VillagerTrades {
         }
     }
 
-    private operator fun get(o: JsonObject, element: String): JsonElement {
-        return if (o.has(element)) {
-            o[element]
-        } else {
-            throw JsonSyntaxException("Missing $element")
-        }
-    }
-
-    private fun typeAwareItemMap(obj: JsonObject): kotlin.collections.Map<VillagerType, Item>? {
+    private fun typeAwareItemMap(obj: JsonObject): Map<VillagerType, Item>? {
         val map: MutableMap<VillagerType, Item> = HashMap()
         for ((key, value) in obj.entrySet()) {
-            val res = Registry.VILLAGER_TYPE.getOrEmpty(Identifier(key))
-            require(res.isPresent) { "Invalid villager type $key" }
-            map[res.get()] = getItem(JsonHelper.asString(value, "item"))
+            val res = JsonUtils.getRegistryItem(Registry.VILLAGER_TYPE, key)
+            map[res] = JsonHelper.asItem(value, "item")
         }
         return map
-    }
-
-    private fun getItem(name: String): Item {
-        val res = Registry.ITEM.getOrEmpty(Identifier(name))
-        require(res.isPresent) { "Invalid item $name" }
-        return res.get()
-    }
-
-    private fun getStatusEffect(name: String): StatusEffect? {
-        val res = Registry.STATUS_EFFECT.getOrEmpty(Identifier(name))
-        require(res.isPresent) { "Invalid status effect $name" }
-        return res.get()
-    }
-
-    private fun getStructureFeature(name: String): StructureFeature<*>? {
-        val res = Registry.STRUCTURE_FEATURE.getOrEmpty(Identifier(name))
-        require(res.isPresent) { "Invalid structure feature $name" }
-        return res.get()
-    }
-
-    private fun getItemStack(el: JsonElement): ItemStack? {
-        return if (el.isJsonPrimitive) ItemStack(getItem(el.asString)) else {
-            val obj = el.asJsonObject
-            ItemStack(
-                    getItem(JsonHelper.getString(obj, "item")),
-                    JsonHelper.getInt(obj, "count")
-            )
-        }
     }
 }

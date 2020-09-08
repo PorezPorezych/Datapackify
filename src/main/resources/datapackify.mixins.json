@@ -3,6 +3,8 @@
   "compatibilityLevel": "JAVA_8",
   "package": "ml.porez.datapackify.mixins",
   "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "CookingRecipeSerializerMixin",
     "ShapedRecipeMixin"
   ]
 }
