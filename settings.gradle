@@ -7,4 +7,9 @@ pluginManagement {
         }
         gradlePluginPortal()
     }
+
+    plugins {
+        id 'fabric-loom' version '0.4-SNAPSHOT'
+        id 'org.jetbrains.kotlin.jvm' version kotlin_version
+    }
 }

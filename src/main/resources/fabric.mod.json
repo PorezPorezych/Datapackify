@@ -14,7 +14,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ml.porez.datapackify.Datapackify"
+      {
+        "adapter": "kotlin",
+        "value": "ml.porez.datapackify.Datapackify"
+      }
     ]
   },
   "accessWidener": "datapackify.accesswidener",
@@ -22,6 +25,7 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
+    "fabric-language-kotlin": "*",
     "minecraft": "1.16.x"
   }
 }
