@@ -1,0 +1,702 @@
+{
+  "profession": "minecraft:wandering_trader",
+  "career_level": 1,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:sea_pickle"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 5,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:slime_ball"
+      },
+      "price": 4,
+      "count": 1,
+      "max_uses": 5,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:glowstone"
+      },
+      "price": 2,
+      "count": 1,
+      "max_uses": 5,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:nautilus_shell"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 5,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:fern"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:sugar_cane"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pumpkin"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 4,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:kelp"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cactus"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:dandelion"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:poppy"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_orchid"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:allium"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:azure_bluet"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_tulip"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_tulip"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_tulip"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_tulip"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:oxeye_daisy"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cornflower"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lily_of_the_valley"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 7,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:wheat_seeds"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:beetroot_seeds"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pumpkin_seeds"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:melon_seeds"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:acacia_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:birch_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:dark_oak_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:jungle_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:oak_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:spruce_sapling"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:white_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pink_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:black_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:green_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_gray_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:magenta_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:yellow_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gray_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:purple_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:light_blue_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lime_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:orange_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:cyan_dye"
+      },
+      "price": 1,
+      "count": 3,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brain_coral_block"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:bubble_coral_block"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:fire_coral_block"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:horn_coral_block"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:tube_coral_block"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:vine"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:brown_mushroom"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_mushroom"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 12,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:lily_pad"
+      },
+      "price": 1,
+      "count": 2,
+      "max_uses": 5,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:sand"
+      },
+      "price": 1,
+      "count": 8,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:red_sand"
+      },
+      "price": 1,
+      "count": 4,
+      "max_uses": 6,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ]
+}

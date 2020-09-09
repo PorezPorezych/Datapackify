@@ -1,0 +1,78 @@
+{
+  "profession": "minecraft:wandering_trader",
+  "career_level": 2,
+  "trades": [
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:tropical_fish_bucket"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 4,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:pufferfish_bucket"
+      },
+      "price": 5,
+      "count": 1,
+      "max_uses": 4,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:packed_ice"
+      },
+      "price": 3,
+      "count": 1,
+      "max_uses": 6,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:blue_ice"
+      },
+      "price": 6,
+      "count": 1,
+      "max_uses": 6,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:gunpowder"
+      },
+      "price": 1,
+      "count": 1,
+      "max_uses": 8,
+      "experience": 1,
+      "multiplier": 0.05
+    },
+    {
+      "type": "minecraft:sell_item",
+      "sell": {
+        "count": 1,
+        "item": "minecraft:podzol"
+      },
+      "price": 3,
+      "count": 3,
+      "max_uses": 6,
+      "experience": 1,
+      "multiplier": 0.05
+    }
+  ]
+}
