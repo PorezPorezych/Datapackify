@@ -39,18 +39,21 @@ class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), Identifiab
         for ((key, value) in loader) {
             LOGGER.debug("Got {}", key)
             try {
-                val obj =JsonHelper.asObject(value, "<file>")
+                val obj = JsonHelper.asObject(value, "<file>")
                 val e = parseFile(obj)
                 val profId =
-                        JsonHelper.getString(obj,
-                                "profession")
+                    Identifier(
+                        JsonHelper.getString(
+                            obj,
+                            "profession"
+                        )
+                    )
 
-                val map = if (profId == "wandering_trader") {
+                val map = if (profId == Identifier("wandering_trader")) {
                     wanderingTrades
-                }
-                else {
-                    val profession = Registry.VILLAGER_PROFESSION.getOrEmpty(Identifier(profId)).orElseThrow {
-                        IllegalArgumentException("Invalid profession ${Identifier(profId)}")
+                } else {
+                    val profession = Registry.VILLAGER_PROFESSION.getOrEmpty(profId).orElseThrow {
+                        IllegalArgumentException("Invalid profession $profId")
                     }
                     trades[profession]!!
                 }
