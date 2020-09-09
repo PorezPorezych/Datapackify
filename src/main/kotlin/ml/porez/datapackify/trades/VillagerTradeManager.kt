@@ -2,6 +2,7 @@ package ml.porez.datapackify.trades
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
+import com.google.gson.JsonObject
 import com.google.gson.JsonParseException
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
@@ -17,7 +18,6 @@ import net.minecraft.village.TradeOffers
 import net.minecraft.village.VillagerProfession
 import org.apache.logging.log4j.LogManager
 import java.util.*
-import kotlin.Pair;
 
 class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), IdentifiableResourceReloadListener {
     companion object {
@@ -31,20 +31,33 @@ class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), Identifiab
 
     override fun apply(loader: Map<Identifier?, JsonElement>, manager: ResourceManager?, profiler: Profiler?) {
         val trades = HashMap<VillagerProfession, Int2ObjectOpenHashMap<MutableList<TradeOffers.Factory>>>()
+        val wanderingTrades = Int2ObjectOpenHashMap<MutableList<TradeOffers.Factory>>()
+
         for (prof in Registry.VILLAGER_PROFESSION) {
             trades[prof] = Int2ObjectOpenHashMap<MutableList<TradeOffers.Factory>>()
         }
         for ((key, value) in loader) {
             LOGGER.debug("Got {}", key)
             try {
-                val profId = Identifier(
-                        JsonHelper.getString(JsonHelper.asObject(value, "<file>"),
+                val obj =JsonHelper.asObject(value, "<file>")
+                val e = parseFile(obj)
+                val profId =
+                        JsonHelper.getString(obj,
                                 "profession")
-                )
-                val profession = Registry.VILLAGER_PROFESSION.getOrEmpty(profId)
-                kotlin.require(profession.isPresent) { "Invalid profession $profId" }
-                val e = parseFile(value)
-                if (trades[profession.get()]!!.containsKey(e.first)) trades[profession.get()]!![e.first]!!.addAll(Arrays.asList(*e.second)) else trades[profession.get()]!![e.first] = ArrayList(Arrays.asList(*e.second))
+
+                val map = if (profId == "wandering_trader") {
+                    wanderingTrades
+                }
+                else {
+                    val profession = Registry.VILLAGER_PROFESSION.getOrEmpty(Identifier(profId)).orElseThrow {
+                        IllegalArgumentException("Invalid profession ${Identifier(profId)}")
+                    }
+                    trades[profession]!!
+                }
+                val careerLevel = JsonHelper.getInt(obj, "career_level")
+                if (map.containsKey(careerLevel)) map[careerLevel]!!.addAll(
+                    arrayListOf(*e)
+                ) else map[careerLevel] = arrayListOf(*e)
             } catch (e: IllegalArgumentException) {
                 LOGGER.error("Encountered error while parsing {}: {}", key, e)
                 e.printStackTrace()
@@ -53,7 +66,7 @@ class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), Identifiab
                 e.printStackTrace()
             }
         }
-        LOGGER.info("Loaded {} villager trades.", trades.size)
+        LOGGER.info("Loaded ${trades.size + wanderingTrades.size} villager trades.")
         val finalMap = HashMap<VillagerProfession, Int2ObjectMap<Array<TradeOffers.Factory>>>()
         for ((key, value) in trades) {
             val profMap = Int2ObjectOpenHashMap<Array<TradeOffers.Factory>>()
@@ -63,18 +76,21 @@ class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), Identifiab
             finalMap[key] = profMap
         }
         TradeOffers.PROFESSION_TO_LEVELED_TRADE = finalMap
+        val finalWanderingMap = Int2ObjectOpenHashMap<Array<TradeOffers.Factory>>()
+        for ((key, value) in wanderingTrades) {
+            finalWanderingMap[key.toInt()] = value.toTypedArray()
+        }
+        TradeOffers.WANDERING_TRADER_TRADES = finalWanderingMap
     }
 
-    private fun parseFile(file: JsonElement): Pair<Int, Array<TradeOffers.Factory>> {
-        val obj = JsonHelper.asObject(file, "<file>")
-        val key = JsonHelper.getInt(obj, "career_level")
+    private fun parseFile(obj: JsonObject): Array<TradeOffers.Factory> {
         val trades = JsonHelper.getArray(obj, "trades")
         val value: Array<TradeOffers.Factory?> = arrayOfNulls(trades.size())
         var i = 0
         for (trade in trades) {
             value[i++] = parseTrade(trade)
         }
-        return Pair(key, value as Array<TradeOffers.Factory>)
+        return value as Array<TradeOffers.Factory>
     }
 
     private fun parseTrade(trade: JsonElement): TradeOffers.Factory {
