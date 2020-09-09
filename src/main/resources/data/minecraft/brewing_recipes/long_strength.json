@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:strength",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_strength"
+}

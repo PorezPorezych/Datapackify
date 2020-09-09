@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:harming",
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "output": "minecraft:strong_harming"
+}

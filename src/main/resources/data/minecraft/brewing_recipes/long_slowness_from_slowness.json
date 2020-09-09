@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:slowness",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_slowness"
+}

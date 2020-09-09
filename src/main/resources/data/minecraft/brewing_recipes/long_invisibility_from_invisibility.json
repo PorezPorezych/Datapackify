@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:invisibility",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_invisibility"
+}

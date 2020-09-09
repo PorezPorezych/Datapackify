@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:poison",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_poison"
+}

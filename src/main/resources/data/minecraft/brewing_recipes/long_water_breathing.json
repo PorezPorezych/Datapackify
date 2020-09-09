@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:water_breathing",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_water_breathing"
+}

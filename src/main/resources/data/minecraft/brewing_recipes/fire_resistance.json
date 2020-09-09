@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:magma_cream"
+  },
+  "output": "minecraft:fire_resistance"
+}

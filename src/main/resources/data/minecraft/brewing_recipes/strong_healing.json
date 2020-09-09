@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:healing",
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "output": "minecraft:strong_healing"
+}

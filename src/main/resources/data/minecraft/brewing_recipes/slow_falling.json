@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "output": "minecraft:slow_falling"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:fire_resistance",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_fire_resistance"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:spider_eye"
+  },
+  "output": "minecraft:poison"
+}

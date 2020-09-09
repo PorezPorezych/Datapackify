@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:strong_poison",
+  "ingredient": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "output": "minecraft:strong_harming"
+}

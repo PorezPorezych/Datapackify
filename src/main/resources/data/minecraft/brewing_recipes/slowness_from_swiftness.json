@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:swiftness",
+  "ingredient": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "output": "minecraft:slowness"
+}

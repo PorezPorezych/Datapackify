@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:blaze_powder"
+  },
+  "output": "minecraft:strength"
+}

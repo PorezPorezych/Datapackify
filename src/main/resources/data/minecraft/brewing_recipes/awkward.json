@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:water",
+  "ingredient": {
+    "item": "minecraft:nether_wart"
+  },
+  "output": "minecraft:awkward"
+}

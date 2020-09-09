@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:weakness",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_weakness"
+}

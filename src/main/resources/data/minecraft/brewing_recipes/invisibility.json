@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:night_vision",
+  "ingredient": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "output": "minecraft:invisibility"
+}

@@ -4,6 +4,8 @@
   "package": "ml.porez.datapackify.mixins",
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
+    "BrewingRecipeRegistryAccessors",
+    "BrewingRecipeRegistryMixin",
     "CookingRecipeSerializerMixin",
     "ShapedRecipeMixin"
   ]

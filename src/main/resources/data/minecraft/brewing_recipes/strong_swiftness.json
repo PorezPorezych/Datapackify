@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:swiftness",
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "output": "minecraft:strong_swiftness"
+}

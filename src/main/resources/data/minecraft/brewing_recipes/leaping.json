@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "output": "minecraft:leaping"
+}

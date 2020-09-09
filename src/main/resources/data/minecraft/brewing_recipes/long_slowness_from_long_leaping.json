@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:long_leaping",
+  "ingredient": {
+    "item": "minecraft:fermented_spider_eye"
+  },
+  "output": "minecraft:long_slowness"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:regeneration",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "output": "minecraft:long_regeneration"
+}

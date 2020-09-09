@@ -1,0 +1,8 @@
+{
+  "type": "potion",
+  "input": "minecraft:awkward",
+  "ingredient": {
+    "item": "minecraft:turtle_helmet"
+  },
+  "output": "minecraft:turtle_master"
+}
