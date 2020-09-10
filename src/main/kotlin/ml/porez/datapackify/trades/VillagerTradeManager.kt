@@ -7,6 +7,7 @@ import com.google.gson.JsonParseException
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
 import ml.porez.datapackify.Datapackify
+import ml.porez.datapackify.mixins.TradeOffersAccessors
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener
 import net.minecraft.resource.JsonDataLoader
 import net.minecraft.resource.ResourceManager
@@ -78,12 +79,12 @@ class VillagerTradeManager : JsonDataLoader(GSON, "villager_trades"), Identifiab
             }
             finalMap[key] = profMap
         }
-        TradeOffers.PROFESSION_TO_LEVELED_TRADE = finalMap
+        TradeOffersAccessors.GlobalAcc.setTrades(finalMap)
         val finalWanderingMap = Int2ObjectOpenHashMap<Array<TradeOffers.Factory>>()
         for ((key, value) in wanderingTrades) {
             finalWanderingMap[key.toInt()] = value.toTypedArray()
         }
-        TradeOffers.WANDERING_TRADER_TRADES = finalWanderingMap
+        TradeOffersAccessors.GlobalAcc.setWanderingTrades(finalWanderingMap)
     }
 
     private fun parseFile(obj: JsonObject): Array<TradeOffers.Factory> {

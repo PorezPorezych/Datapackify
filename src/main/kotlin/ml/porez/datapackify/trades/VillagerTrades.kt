@@ -3,6 +3,7 @@ package ml.porez.datapackify.trades
 import com.google.gson.JsonObject
 import ml.porez.datapackify.Datapackify
 import ml.porez.datapackify.JsonUtils
+import ml.porez.datapackify.mixins.TradeOffersAccessors
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper
 import net.minecraft.item.Item
@@ -53,7 +54,7 @@ object VillagerTrades {
                 JsonHelper.getInt(obj, "experience"),
                 JsonHelper.getFloat(obj, "multiplier", 0.05f)
             )
-            fac.tool = JsonUtils.makeItemStack(JsonUtils.get(obj, "tool"))
+            (fac as MainItemSellAcc).setMainStack(JsonUtils.makeItemStack(JsonUtils.get(obj, "tool")))
             fac
         }
         register("minecraft:sell_map") { obj ->
@@ -71,7 +72,7 @@ object VillagerTrades {
                 JsonHelper.getInt(obj, "duration"),
                 JsonHelper.getInt(obj, "experience")
             )
-            fac.multiplier = JsonHelper.getFloat(obj, "multiplier", 0.05f)
+            (fac as MultiplierAcc).setMultiplier(JsonHelper.getFloat(obj, "multiplier", 0.05f))
             fac
         }
         register("minecraft:process_item") { obj ->
@@ -84,9 +85,9 @@ object VillagerTrades {
                 JsonHelper.getInt(obj, "max_uses"),
                 JsonHelper.getInt(obj, "experience")
             )
-            fac.multiplier = JsonHelper.getFloat(obj, "multiplier", 0.05f)
-            fac.secondBuy = JsonUtils.makeItemStack(JsonUtils.get(obj, "second_buy"))
-            fac.sell = JsonUtils.makeItemStack(JsonUtils.get(obj, "sell"))
+            (fac as MultiplierAcc).setMultiplier(JsonHelper.getFloat(obj, "multiplier", 0.05f))
+            (fac as SecondaryItemSellAcc).setSecondaryStack(JsonUtils.makeItemStack(JsonUtils.get(obj, "second_buy")))
+            (fac as MainItemSellAcc).setMainStack( JsonUtils.makeItemStack(JsonUtils.get(obj, "sell")))
             fac
         }
         register("minecraft:type_aware_buy_for_one_emerald") { obj ->
@@ -107,7 +108,7 @@ object VillagerTrades {
                 JsonHelper.getInt(obj, "max_uses"),
                 JsonHelper.getInt(obj, "experience")
             )
-            fac.sell = JsonUtils.makeItemStack(JsonUtils.get(obj, "sell"))
+            (fac as MainItemSellAcc).setMainStack(JsonUtils.makeItemStack(JsonUtils.get(obj, "sell")))
             fac
         }
         register("minecraft:sell_dyed_armor") { obj ->

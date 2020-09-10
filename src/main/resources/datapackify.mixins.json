@@ -8,6 +8,11 @@
     "BrewingRecipeRegistryMixin",
     "CookingRecipeSerializerMixin",
     "SellItemFactoryMixin",
-    "ShapedRecipeMixin"
+    "ShapedRecipeMixin",
+    "TradeOffersAccessors$GlobalAcc",
+    "TradeOffersAccessors$ProcessItemFactoryMixin",
+    "TradeOffersAccessors$SellEnchantedToolFactoryMixin",
+    "TradeOffersAccessors$SellPotionHoldingItemFactoryMixin",
+    "TradeOffersAccessors$SellSuspiciousStewFactoryMixin"
   ]
 }

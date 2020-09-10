@@ -1,25 +1,11 @@
 accessWidener	v1	named
-mutable field   net/minecraft/village/TradeOffers PROFESSION_TO_LEVELED_TRADE Ljava/util/Map;
-mutable field   net/minecraft/village/TradeOffers WANDERING_TRADER_TRADES Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 accessible  class   net/minecraft/village/TradeOffers$ProcessItemFactory
-mutable     field   net/minecraft/village/TradeOffers$ProcessItemFactory secondBuy Lnet/minecraft/item/ItemStack;
-accessible  field   net/minecraft/village/TradeOffers$ProcessItemFactory secondBuy Lnet/minecraft/item/ItemStack;
-mutable     field   net/minecraft/village/TradeOffers$ProcessItemFactory sell Lnet/minecraft/item/ItemStack;
-accessible  field   net/minecraft/village/TradeOffers$ProcessItemFactory sell Lnet/minecraft/item/ItemStack;
-mutable     field   net/minecraft/village/TradeOffers$ProcessItemFactory multiplier F
-accessible  field   net/minecraft/village/TradeOffers$ProcessItemFactory multiplier F
 accessible  class   net/minecraft/village/TradeOffers$SellMapFactory
 accessible  class   net/minecraft/village/TradeOffers$EnchantBookFactory
 accessible  class   net/minecraft/village/TradeOffers$SellDyedArmorFactory
-mutable  field   net/minecraft/village/TradeOffers$SellPotionHoldingItemFactory sell Lnet/minecraft/item/ItemStack;
-accessible  field   net/minecraft/village/TradeOffers$SellPotionHoldingItemFactory sell Lnet/minecraft/item/ItemStack;
 accessible  class   net/minecraft/village/TradeOffers$SellPotionHoldingItemFactory
 accessible  class   net/minecraft/village/TradeOffers$SellEnchantedToolFactory
-mutable  field   net/minecraft/village/TradeOffers$SellEnchantedToolFactory tool Lnet/minecraft/item/ItemStack;
-accessible  field   net/minecraft/village/TradeOffers$SellEnchantedToolFactory tool Lnet/minecraft/item/ItemStack;
 accessible  class   net/minecraft/village/TradeOffers$SellSuspiciousStewFactory
-mutable  field   net/minecraft/village/TradeOffers$SellSuspiciousStewFactory multiplier F
-accessible  field   net/minecraft/village/TradeOffers$SellSuspiciousStewFactory multiplier F
 accessible  class   net/minecraft/village/TradeOffers$SellItemFactory
 accessible  class   net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory
 accessible  class   net/minecraft/village/TradeOffers$BuyForOneEmeraldFactory
