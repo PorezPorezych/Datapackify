@@ -7,6 +7,6 @@ object PotionRecipes {
     private val MANAGER = BrewingRecipeManager()
 
     fun init() {
-        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(MANAGER);
+        ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(MANAGER)
     }
 }

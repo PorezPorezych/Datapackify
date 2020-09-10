@@ -7,7 +7,7 @@
     "BrewingRecipeRegistryAccessors",
     "BrewingRecipeRegistryMixin",
     "CookingRecipeSerializerMixin",
-    "ShapedRecipeMixin",
-    "SellItemFactoryMixin"
+    "SellItemFactoryMixin",
+    "ShapedRecipeMixin"
   ]
 }

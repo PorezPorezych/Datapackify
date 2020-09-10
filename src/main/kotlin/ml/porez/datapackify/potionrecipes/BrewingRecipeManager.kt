@@ -25,20 +25,20 @@ class BrewingRecipeManager : JsonDataLoader(GSON, "brewing_recipes"), Identifiab
         private val LOGGER = LogManager.getLogger("Datapackify/BrewingRecipeManager")
         private val GSON = GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create()
 
-        private var PRESET_ITEM_RECIPES: List<BrewingRecipeRegistry.Recipe<Item>>? = null;
-        private var PRESET_POTION_RECIPES: List<BrewingRecipeRegistry.Recipe<Potion>>? = null;
-        private var PRESET_POTION_TYPES: List<Ingredient>? = null;
+        private var PRESET_ITEM_RECIPES: List<BrewingRecipeRegistry.Recipe<Item>>? = null
+        private var PRESET_POTION_RECIPES: List<BrewingRecipeRegistry.Recipe<Potion>>? = null
+        private var PRESET_POTION_TYPES: List<Ingredient>? = null
     }
 
     override fun apply(loader: MutableMap<Identifier, JsonElement>, manager: ResourceManager, profiler: Profiler) {
         if (PRESET_ITEM_RECIPES == null) {
-            PRESET_ITEM_RECIPES = BrewingRecipeRegistryAccessors.getItemRecipes();
+            PRESET_ITEM_RECIPES = BrewingRecipeRegistryAccessors.getItemRecipes()
         }
         if (PRESET_POTION_RECIPES == null) {
-            PRESET_POTION_RECIPES = BrewingRecipeRegistryAccessors.getPotionRecipes();
+            PRESET_POTION_RECIPES = BrewingRecipeRegistryAccessors.getPotionRecipes()
         }
         if (PRESET_POTION_TYPES == null) {
-            PRESET_POTION_TYPES = BrewingRecipeRegistryAccessors.getPotionTypes();
+            PRESET_POTION_TYPES = BrewingRecipeRegistryAccessors.getPotionTypes()
         }
 
         val newItemRecipes = arrayListOf<BrewingRecipeRegistry.Recipe<Item>>()
@@ -46,8 +46,8 @@ class BrewingRecipeManager : JsonDataLoader(GSON, "brewing_recipes"), Identifiab
 
         for ((id, el) in loader) {
             try {
-                val obj = JsonHelper.asObject(el, "<brewing recipe>");
-                val type = JsonHelper.getString(obj, "type");
+                val obj = JsonHelper.asObject(el, "<brewing recipe>")
+                val type = JsonHelper.getString(obj, "type")
                 when (type) {
                     "item" -> {
                         newItemRecipes.add(

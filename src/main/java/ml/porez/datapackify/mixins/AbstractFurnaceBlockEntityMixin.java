@@ -6,7 +6,6 @@ import net.minecraft.recipe.Recipe;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
@@ -18,7 +17,7 @@ public class AbstractFurnaceBlockEntityMixin {
         output.increment(recipeOutput.getCount() - 1);
     }
 
-    @Inject(method = "canAcceptRecipeOutput(Lnet/minecraft/recipe/Recipe;)Z", at=@At(value = "INVOKE", target="Lnet/minecraft/item/ItemStack;isItemEqualIgnoreDamage(Lnet/minecraft/item/ItemStack;)Z"), locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
+    @Inject(method = "canAcceptRecipeOutput(Lnet/minecraft/recipe/Recipe;)Z", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isItemEqualIgnoreDamage(Lnet/minecraft/item/ItemStack;)Z"), locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
     private void canAcceptRecipeOutput(Recipe<?> recipe, CallbackInfoReturnable<Boolean> cir, ItemStack recipeOut, ItemStack furnaceOut) {
         if (furnaceOut.getCount() + recipeOut.getCount() > furnaceOut.getMaxCount())
             cir.setReturnValue(false);

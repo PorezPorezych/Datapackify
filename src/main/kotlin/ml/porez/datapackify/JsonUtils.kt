@@ -4,7 +4,6 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.mojang.brigadier.StringReader
 import com.mojang.brigadier.exceptions.CommandSyntaxException
-import ml.porez.datapackify.trades.VillagerTrades
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.StringNbtReader
 import net.minecraft.util.Identifier
@@ -13,7 +12,7 @@ import net.minecraft.util.registry.Registry
 
 object JsonUtils {
     fun get(obj: JsonObject, name: String): JsonElement {
-        return obj.get(name) ?: throw IllegalArgumentException("Missing $name");
+        return obj.get(name) ?: throw IllegalArgumentException("Missing $name")
     }
 
     fun <T> getRegistryItem(reg: Registry<T>, id: String): T {
@@ -26,8 +25,8 @@ object JsonUtils {
         return if (from.isJsonPrimitive) ItemStack(JsonHelper.asItem(from, "<item stack>")) else {
             val obj = JsonHelper.asObject(from, "<item stack>")
             var ist = ItemStack(
-                    JsonHelper.getItem(obj, "item"),
-                    JsonHelper.getInt(obj, "count", 1)
+                JsonHelper.getItem(obj, "item"),
+                JsonHelper.getInt(obj, "count", 1)
             )
             if (obj.has("data")) {
                 val tag = JsonHelper.getString(obj, "data")

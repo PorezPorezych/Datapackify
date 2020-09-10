@@ -11,5 +11,6 @@ public class BrewingRecipeRegistryMixin {
      * @author BasiqueEvangelist
      */
     @Overwrite
-    public static void registerDefaults() { }
+    public static void registerDefaults() {
+    }
 }
