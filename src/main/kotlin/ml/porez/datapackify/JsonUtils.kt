@@ -24,16 +24,16 @@ object JsonUtils {
     fun makeItemStack(from: JsonElement): ItemStack {
         return if (from.isJsonPrimitive) ItemStack(JsonHelper.asItem(from, "<item stack>")) else {
             val obj = JsonHelper.asObject(from, "<item stack>")
-            var ist = ItemStack(
+            val ist = ItemStack(
                 JsonHelper.getItem(obj, "item"),
                 JsonHelper.getInt(obj, "count", 1)
             )
-            if (obj.has("data")) {
-                val tag = JsonHelper.getString(obj, "data")
+            if (obj.has("nbt")) {
+                val tag = JsonHelper.getString(obj, "nbt")
                 try {
-                    ist.setTag(StringNbtReader(StringReader(tag)).parseCompoundTag())
+                    ist.setTag(StringNbtReader.parse(tag))
                 } catch (cse: CommandSyntaxException) {
-                    throw java.lang.IllegalArgumentException(cse)
+                    throw java.lang.IllegalArgumentException("Could not parse NBT tag: $cse")
                 }
             }
             ist
