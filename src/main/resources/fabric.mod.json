@@ -13,7 +13,7 @@
     "main": [
       {
         "adapter": "kotlin",
-        "value": "ml.porez.datapackify.Datapackify"
+        "value": "me.basiqueevangelist.datapackify.Datapackify"
       }
     ]
   },

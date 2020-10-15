@@ -1,7 +1,8 @@
-package ml.porez.datapackify.mixins;
+package me.basiqueevangelist.datapackify.mixins;
 
 import com.google.gson.JsonObject;
-import ml.porez.datapackify.JsonUtils;
+import me.basiqueevangelist.datapackify.JsonUtils;
+import me.basiqueevangelist.datapackify.JsonUtils;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.ShapedRecipe;
 import org.spongepowered.asm.mixin.Mixin;

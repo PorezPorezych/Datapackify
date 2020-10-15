@@ -1,7 +1,7 @@
 {
   "required": true,
   "compatibilityLevel": "JAVA_8",
-  "package": "ml.porez.datapackify.mixins",
+  "package": "me.basiqueevangelist.datapackify.mixins",
   "mixins": [
     "AbstractFurnaceBlockEntityMixin",
     "BrewingRecipeRegistryAccessors",

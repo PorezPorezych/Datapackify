@@ -1,4 +1,4 @@
-package ml.porez.datapackify.mixins;
+package me.basiqueevangelist.datapackify.mixins;
 
 import net.minecraft.recipe.BrewingRecipeRegistry;
 import org.spongepowered.asm.mixin.Mixin;

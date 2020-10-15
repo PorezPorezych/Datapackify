@@ -1,4 +1,4 @@
-package ml.porez.datapackify.potionrecipes
+package me.basiqueevangelist.datapackify.potionrecipes
 
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper
 import net.minecraft.resource.ResourceType

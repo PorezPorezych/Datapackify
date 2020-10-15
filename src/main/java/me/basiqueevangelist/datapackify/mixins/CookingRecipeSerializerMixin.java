@@ -1,9 +1,9 @@
-package ml.porez.datapackify.mixins;
+package me.basiqueevangelist.datapackify.mixins;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
-import ml.porez.datapackify.JsonUtils;
+import me.basiqueevangelist.datapackify.JsonUtils;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.AbstractCookingRecipe;
 import net.minecraft.recipe.CookingRecipeSerializer;

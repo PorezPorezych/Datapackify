@@ -1,4 +1,4 @@
-package ml.porez.datapackify.mixins;
+package me.basiqueevangelist.datapackify.mixins;
 
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;

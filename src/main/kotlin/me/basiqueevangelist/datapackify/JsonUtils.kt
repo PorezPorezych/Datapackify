@@ -1,4 +1,4 @@
-package ml.porez.datapackify
+package me.basiqueevangelist.datapackify
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject

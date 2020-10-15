@@ -1,4 +1,4 @@
-package ml.porez.datapackify.trades
+package me.basiqueevangelist.datapackify.trades
 
 import net.minecraft.item.ItemStack
 

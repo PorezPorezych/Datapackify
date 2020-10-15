@@ -1,4 +1,4 @@
-package ml.porez.datapackify.trades
+package me.basiqueevangelist.datapackify.trades
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
@@ -6,8 +6,8 @@ import com.google.gson.JsonObject
 import com.google.gson.JsonParseException
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
-import ml.porez.datapackify.Datapackify
-import ml.porez.datapackify.mixins.TradeOffersAccessors
+import me.basiqueevangelist.datapackify.Datapackify
+import me.basiqueevangelist.datapackify.mixins.TradeOffersAccessors
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener
 import net.minecraft.resource.JsonDataLoader
 import net.minecraft.resource.ResourceManager

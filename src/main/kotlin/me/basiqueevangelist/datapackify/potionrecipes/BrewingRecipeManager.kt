@@ -1,11 +1,11 @@
-package ml.porez.datapackify.potionrecipes
+package me.basiqueevangelist.datapackify.potionrecipes
 
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonElement
 import com.google.gson.JsonParseException
-import ml.porez.datapackify.Datapackify
-import ml.porez.datapackify.JsonUtils
-import ml.porez.datapackify.mixins.BrewingRecipeRegistryAccessors
+import me.basiqueevangelist.datapackify.Datapackify
+import me.basiqueevangelist.datapackify.JsonUtils
+import me.basiqueevangelist.datapackify.mixins.BrewingRecipeRegistryAccessors
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener
 import net.fabricmc.fabric.api.tag.TagRegistry
 import net.minecraft.item.Item

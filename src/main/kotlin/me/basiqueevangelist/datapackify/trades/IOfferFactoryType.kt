@@ -1,4 +1,4 @@
-package ml.porez.datapackify.trades;
+package me.basiqueevangelist.datapackify.trades;
 
 import com.google.gson.JsonObject;
 import net.minecraft.village.TradeOffers;

@@ -1,7 +1,7 @@
-package ml.porez.datapackify
+package me.basiqueevangelist.datapackify
 
-import ml.porez.datapackify.potionrecipes.PotionRecipes
-import ml.porez.datapackify.trades.VillagerTrades
+import me.basiqueevangelist.datapackify.potionrecipes.PotionRecipes
+import me.basiqueevangelist.datapackify.trades.VillagerTrades
 import net.fabricmc.api.ModInitializer
 
 object Datapackify : ModInitializer {

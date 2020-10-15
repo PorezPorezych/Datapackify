@@ -1,9 +1,12 @@
-package ml.porez.datapackify.mixins;
+package me.basiqueevangelist.datapackify.mixins;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import ml.porez.datapackify.trades.MainItemSellAcc;
-import ml.porez.datapackify.trades.MultiplierAcc;
-import ml.porez.datapackify.trades.SecondaryItemSellAcc;
+import me.basiqueevangelist.datapackify.trades.MainItemSellAcc;
+import me.basiqueevangelist.datapackify.trades.MultiplierAcc;
+import me.basiqueevangelist.datapackify.trades.SecondaryItemSellAcc;
+import me.basiqueevangelist.datapackify.trades.MainItemSellAcc;
+import me.basiqueevangelist.datapackify.trades.MultiplierAcc;
+import me.basiqueevangelist.datapackify.trades.SecondaryItemSellAcc;
 import net.minecraft.item.ItemStack;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOffers;

@@ -1,9 +1,8 @@
-package ml.porez.datapackify.trades
+package me.basiqueevangelist.datapackify.trades
 
 import com.google.gson.JsonObject
-import ml.porez.datapackify.Datapackify
-import ml.porez.datapackify.JsonUtils
-import ml.porez.datapackify.mixins.TradeOffersAccessors
+import me.basiqueevangelist.datapackify.Datapackify
+import me.basiqueevangelist.datapackify.JsonUtils
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper
 import net.minecraft.item.Item
