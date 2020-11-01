@@ -35,6 +35,26 @@ object ItemStackTransformers : ItemStackTransformer {
          stack.damage = stack.maxDamage - JsonHelper.asInt(data, "minecraft:durability")
     })
 
+    val ENCHANTMENTS = Registry.register(REGISTRY, Identifier("enchantments"), ItemStackTransformer { data, stack ->
+        if ("Enchantments" !in stack.orCreateTag && stack.item != Items.ENCHANTED_BOOK)
+            stack.orCreateTag.put("Enchantments", ListTag())
+        for ((enchIdStr, levelEl) in JsonHelper.asObject(data, "minecraft:enchantments").entrySet()) {
+            val enchId = Identifier(enchIdStr)
+            val ench = Registry.ENCHANTMENT.getOrEmpty(enchId).orElseThrow {
+                java.lang.IllegalArgumentException("Invalid enchantment '$enchId'")
+            }
+            val level = JsonHelper.asInt(levelEl, "level")
+            if (stack.item == Items.ENCHANTED_BOOK)
+                EnchantedBookItem.addEnchantment(stack, EnchantmentLevelEntry(ench, level))
+            else {
+                val enchTag = CompoundTag()
+                enchTag.putString("id", enchId.toString())
+                enchTag.putShort("lvl", level.toShort())
+                stack.enchantments.add(enchTag)
+            }
+        }
+    })
+
     override fun transform(data: JsonElement, stack: ItemStack) {
         for ((idStr, trData) in JsonHelper.asObject(data, "<item stack>").entrySet()) {
             if (idStr == "item" || idStr == "count")
