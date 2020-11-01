@@ -4,6 +4,7 @@ import com.google.gson.JsonElement
 import com.google.gson.JsonObject
 import com.mojang.brigadier.StringReader
 import com.mojang.brigadier.exceptions.CommandSyntaxException
+import me.basiqueevangelist.datapackify.nbt.ItemNbtConstructor
 import net.minecraft.item.ItemStack
 import net.minecraft.nbt.StringNbtReader
 import net.minecraft.util.Identifier
@@ -28,14 +29,7 @@ object JsonUtils {
                 JsonHelper.getItem(obj, "item"),
                 JsonHelper.getInt(obj, "count", 1)
             )
-            if (obj.has("nbt")) {
-                val tag = JsonHelper.getString(obj, "nbt")
-                try {
-                    ist.setTag(StringNbtReader.parse(tag))
-                } catch (cse: CommandSyntaxException) {
-                    throw java.lang.IllegalArgumentException("Could not parse NBT tag: $cse")
-                }
-            }
+            ist.tag = ItemNbtConstructor.fromJson(obj)
             ist
         }
     }
