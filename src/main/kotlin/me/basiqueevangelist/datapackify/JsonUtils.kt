@@ -2,11 +2,7 @@ package me.basiqueevangelist.datapackify
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
-import com.mojang.brigadier.StringReader
-import com.mojang.brigadier.exceptions.CommandSyntaxException
-import me.basiqueevangelist.datapackify.nbt.ItemNbtConstructor
 import net.minecraft.item.ItemStack
-import net.minecraft.nbt.StringNbtReader
 import net.minecraft.util.Identifier
 import net.minecraft.util.JsonHelper
 import net.minecraft.util.registry.Registry
@@ -29,7 +25,7 @@ object JsonUtils {
                 JsonHelper.getItem(obj, "item"),
                 JsonHelper.getInt(obj, "count", 1)
             )
-            ist.tag = ItemNbtConstructor.fromJson(obj)
+            ItemStackTransformers.transform(obj, ist)
             ist
         }
     }
