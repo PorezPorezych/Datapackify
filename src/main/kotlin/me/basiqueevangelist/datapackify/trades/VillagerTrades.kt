@@ -123,6 +123,7 @@ object VillagerTrades {
                 JsonHelper.getInt(obj, "experience")
             )
         }
+        register("datapackify:generic", GenericTradeOfferFactory::parse)
 
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(VILLAGER_TRADES)
     }
